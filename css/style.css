@@ -1,28 +1,33 @@
-body
+/**** global ****/
+body {
   font-size: 14px;
 }
 
+
+/**** navigation ****/
 nav {
-  background color: yellow;
+  background-color: yellow;
   height: 100px;
-  margin-top: -10px;
-  position: fixed;
+  margin-top: 0px; /* changed from -10px */
+/*  position: fixed; */
   width: 100%;
+} /*  added closing brace */
 
 
+/**** main elements ****/
 section {
   margin: 0 auto;
   width: 60%;
 }
 
 h1 {
-  font-family sans-serif;
+  font-family: sans-serif; /* added missing colon */
   font-size: 2em;
 }
 
 .example, h3 {
   padding-top: 30px;
-  text-align center
+  text-align: center; /* added missing colon and semicolon */
 }
 
 h3 {
@@ -32,5 +37,10 @@ h3 {
 .element {
   background-color: green;
   height: 100px;
-  margin 10px 0;
+  margin: 10px 0; /* added missing colon */
   width: 100%;
+}
+
+.altelement {
+  background-color: pink;  /* added altelement class */
+}
